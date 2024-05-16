@@ -44,7 +44,9 @@ PYTORCH = "pytorch"
 TENSORFLOW = "tensorflow"
 OPTIMAL_TREE = "optimaltree"
 XGBOOST = "xgboost"
-DEFAULT_LEARNER = XGBOOST
+OCT = "oct"
+# DEFAULT_LEARNER = XGBOOST
+DEFAULT_LEARNER = OCT
 
 # Learners settings
 N_BEST = 10

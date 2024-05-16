@@ -41,6 +41,7 @@ class Problem(object):
                  cvxpy_problem,
                  solver=stg.DEFAULT_SOLVER,
                  verbose=False,
+                 tight_constraints=False,
                  **solver_options):
         """
         Initialize optimization problem.
@@ -58,6 +59,7 @@ class Problem(object):
         # Assign solver
         self.solver = solver
         self.verbose = verbose
+        self.tight_constraints = tight_constraints
 
         # Define problem
         if not cvxpy_problem.is_dcp():
